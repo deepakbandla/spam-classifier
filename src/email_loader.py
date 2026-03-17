@@ -22,7 +22,6 @@ def load_dataset():
         f for f in sorted(spam_dir.iterdir())
         if len(f.name) > 20
     ]
-
     ham_emails = [load_email(f) for f in ham_filenames]
     spam_emails = [load_email(f) for f in spam_filenames]
 
